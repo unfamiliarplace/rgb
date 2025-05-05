@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>RGB</title>
+  <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+  <link rel="stylesheet" href="./style.css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id='app' class='flexCol'>
+  <div id='titlePanel' class='flexRow'>
+    <h1 id='title'>RGB</h1>
+  </div>
+  <div id='instructionsPanel' class='flexRow'>
+    <div id='instructions'>Enter RGB values or change the hex directly.</div>
+  </div>
+  <div id='shortcutsPanel' class='flexRow'>
+  <button id='swWhite' class='control controlSmall' title='hotkey W'>
+    <span class='swatch swatch-white'></span>
+            <span class='controlText'>White</span>
+        </button>
+  <button id='swBlack' class='control controlSmall' title='hotkey K'>
+    <span class='swatch swatch-black'></span>
+            <span class='controlText'>Black</span>
+        </button>
+    <button id='swRandom' class='control controlSmall' title='hotkey M'>
+    <span class='swatch swatch-random'></span>
+            <span class='controlText'>Random</span>
+        </button>
+</div>
+  <div id='controlPanel' class='flexRow'>
+    <div class='hexCol flexCol'>
+      <label for='redHex'>Red</label>
+    <input id='redHex' type='number' class='hexInput hex' value='0' min='0' max='255' title='hotkey R'></input>
+  </div>
+    <div class='hexCol flexCol'>
+      <label for='greenHex'>Green</label>
+  <input id='greenHex' type='number' class='hexInput hex' value='0' min='0' max='255' title='hotkey G'></input>
+  </div>
+    <div class='hexCol flexCol'>
+      <label for='blueHex'>Blue</label>
+<input id='blueHex' type='number' class='hexInput hex' value='0' min='0' max='255' title='hotkey L'></input>
+  </div>
+    
+    
+  </div>
+
+<div id='outputPanel' class='flexRow'>
+  <input id='output' class='flexCol' value='#000000' maxlength='7' title='hotkey H'></input>
+  
+</div>
+  <div id='copyPanel' class='flexRow'>
+    <button id='copyOutput' class='copyButton' title='hotkey X'>
+                <i class="far fa-copy" aria-hidden="true"></i>
+    </button>
+      
+    </div>
+    <div id='creditsPanel' class='flexCol'>
+        <div id='credits'>© 2023 <a href="https://sawczak.com" title="Visit Luke Sawczak's website">Luke Sawczak</a></div>
+    </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://tools.unfamiliarplace.com/timer/includes/app-tools.js'></script>
+<script src='https://tools.unfamiliarplace.com/timer/includes/jquery-ui-options.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
